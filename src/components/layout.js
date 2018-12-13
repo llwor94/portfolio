@@ -1,27 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
+import Helmet from 'react-helmet';
 
 import Header from './header';
 import './layout.css';
 
 const Layout = ({ children }) => (
-	<StaticQuery
-		query={graphql`
-			query SiteTitleQuery {
-				site {
-					siteMetadata {
-						title
-					}
-				}
-			}
-		`}
-		render={data => (
-			<div>
-				<div>{children}</div>
-			</div>
-		)}
-	/>
+	<div>
+		<Helmet>
+			<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' />
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+		</Helmet>
+
+		<div>{children}</div>
+	</div>
 );
 
 Layout.propTypes = {
