@@ -57,7 +57,7 @@ const Header = () => (
 			<a href='https://github.com/llwor94' target='_blank'>
 				<FontAwesomeIcon icon={faGithub} />
 			</a>
-			<a href='https://github.com/llwor94' target='_blank'>
+			<a href='https://linkedin.com/in/lauren-worthington' target='_blank'>
 				<FontAwesomeIcon icon={faLinkedinIn} />
 			</a>
 		</Icons>
