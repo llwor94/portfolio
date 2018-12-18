@@ -13,7 +13,10 @@ const Layout = ({ children }) => (
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
 		</Helmet>
 
-		<div>{children}</div>
+		<div>
+			<Header />
+			{children}
+		</div>
 	</div>
 );
 
