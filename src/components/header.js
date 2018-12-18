@@ -20,8 +20,13 @@ const Nav = styled.div`display: flex;`;
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #2f313d;
+	padding-right: 7px;
   font-size: 14px;
 	font-family: 'Roboto-Mono', monospace;
+
+	&:hover {
+		color: #fff;
+	}
 `;
 
 const Icons = styled.div`
@@ -41,7 +46,10 @@ const Icons = styled.div`
 
 const Header = () => (
 	<Wrapper>
-		<StyledLink to='#about'>About</StyledLink>
+		<Nav>
+			<StyledLink to='#about'>About</StyledLink>
+			<StyledLink to='#projects'>Projects</StyledLink>
+		</Nav>
 		<Icons>
 			<a href='https://twitter.com/llwor94' target='_blank'>
 				<FontAwesomeIcon icon={faTwitter} />

@@ -6,14 +6,13 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import About from '../components/about';
-
-import Header from '../components/header';
-
+import Projects from '../components/projects';
 const IndexPage = () => (
 	<Layout>
 		<SEO title='Home' keywords={[ 'gatsby', 'application', 'react' ]} />
 		<Jumbotron />
 		<About />
+		<Projects />
 	</Layout>
 );
 
