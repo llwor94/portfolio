@@ -19,7 +19,7 @@ const Nav = styled.div`display: flex;`;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #2f313d;
+  color: #ffffff;
 	padding-right: 7px;
   font-size: 14px;
 	font-family: 'Roboto-Mono', monospace;

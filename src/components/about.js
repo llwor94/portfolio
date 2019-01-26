@@ -32,28 +32,27 @@ const About = () => (
 			<p>
 				Lauren's coding curiousity was first sparked during her time at the University of
 				Washington. In the last few semesters of her undergraduate studies in Philsophy,
-				Lauren took an intro to computer programming series where she learned Java and fell
-				in love.
+				Lauren took an intro to computer programming series and realized that it was what
+				she wanted to pursue.
 			</p>
 			<p>
-				After graduating, Lauren worked full time at a restauarant in Seattle, saving up
-				money and taking a few programming courses online on the side so she could pursue
-				studying programming full-time. In June of 2018, she started at Lambda School,
-				settling into the full-stack web development course, unsure of where it would take
-				her.
+				After graduating, Lauren worked full time, saving up money and taking a few
+				programming courses online on the side so she could study programming full-time. In
+				June of 2018 she started at Lambda School, settling into the full-stack web
+				development course, unsure of where it would take her.
 			</p>
 			<p>
-				Lambda School ended up being the best decision of her life- quickly picking up the
-				basics of HTML, CSS, and JavaScript, and diving into the complexities of React,
-				Nodejs, Express, SQL, and more. She was hired to be the Section Lead for a new
-				cohort, and is currently holding this position, helping to guide students through
-				the first 3 months of the program, while continuing to expand her knowledge in web
-				development and build projects on the side.
+				Lambda School ended up being one of the best decisions of her life- quickly picking
+				up the basics of HTML, CSS, and JavaScript, and diving into the complexities of
+				React, Nodejs, Express, SQL, and more. She was hired to be the Section Lead for a
+				new cohort, and is currently holding this position, helping to guide students
+				through the first 3 months of the program, while continuing to expand her knowledge
+				in web development and building projects on the side.
 			</p>
 			<p>
-				Lauren is currently finishing out her time at Lambda School, and searching for her
-				place within the professional coding community. With her love of working with data,
-				she is passionate for backend development, but also loves building client side
+				Lauren is currently finishing her time at Lambda School, and searching for her place
+				within the professional coding community. With her love of working with data, she is
+				passionate for backend development, but also loves building client side
 				applications.
 			</p>
 		</TextContent>

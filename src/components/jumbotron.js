@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons';
 import Background from '../images/code1.png';
+import Particles from 'react-particles-js';
+import { Transition } from 'react-transition-group';
 
 const Wrapper = styled.div`
 	position: relative;
-	background: #f9f9fb;
+
 	height: 100vh;
+	background: #0f2027; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to top,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to top,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	border-bottom: 1px solid #e5e7e9;
 	margin: 0 0 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 `;
-const BackgroundImage = styled.div`
+const BackgroundImage = styled(Particles)`
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -54,19 +70,55 @@ const Inner = styled.div`
 	}
 `;
 
-const Jumbotron = () => (
-	<Wrapper>
-		<BackgroundImage style={{ backgroundImage: `url(${Background})` }} />
-		<Content>
-			<Inner>
-				<h1>Lauren Worthington</h1>
-				<p>Full Stack Web Developer || Seattle, WA</p>
-				<a href='#about'>
-					<FontAwesomeIcon icon={faArrowCircleDown} style={{ color: 'black' }} />
-				</a>
-			</Inner>
-		</Content>
-	</Wrapper>
-);
+const Jumbotron = () => {
+	const pageRef = React.createRef();
+	const scroll = ref => {
+		ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	};
+
+	return (
+		<Fragment>
+			<Wrapper>
+				<Particles
+					width={'100vw'}
+					height={'100vh'}
+					style={{ position: 'absolute', top: 0, left: 0 }}
+					params={{
+						particles: {
+							number: {
+								value: 50,
+							},
+							size: {
+								value: 3,
+							},
+						},
+						interactivity: {
+							events: {
+								onhover: {
+									enable: true,
+									mode: 'repulse',
+								},
+							},
+						},
+					}}
+				/>
+				<Content>
+					<Inner>
+						<h1>Lauren Worthington</h1>
+						<p>Full Stack Web Developer || Seattle, WA</p>
+						<div>
+							<FontAwesomeIcon
+								icon={faArrowCircleDown}
+								style={{ color: 'black', cursor: 'pointer' }}
+								onClick={() => scroll(pageRef)}
+							/>
+						</div>
+					</Inner>
+				</Content>
+			</Wrapper>
+			<div ref={pageRef} />
+		</Fragment>
+	);
+};
 
 export default Jumbotron;
