@@ -64,9 +64,11 @@ const Inner = styled.div`
 	h1 {
 		font-size: 80px;
 		font-family: 'Open Sans', sans-serif;
+		color: #ffffff;
 	}
 	p {
 		font-family: 'Roboto-Mono', monospace;
+		color: #ffffff;
 	}
 `;
 
@@ -109,7 +111,7 @@ const Jumbotron = () => {
 						<div>
 							<FontAwesomeIcon
 								icon={faArrowCircleDown}
-								style={{ color: 'black', cursor: 'pointer' }}
+								style={{ color: '#ffffff', cursor: 'pointer' }}
 								onClick={() => scroll(pageRef)}
 							/>
 						</div>
