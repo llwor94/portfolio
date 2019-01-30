@@ -13,6 +13,9 @@ const Wrapper = styled.div`
 	top: 0;
 	width: 100%;
 	z-index: 1;
+	@media (max-width: 500px) {
+		padding: 20px 10px;
+	}
 `;
 
 const Nav = styled.div`display: flex;`;
