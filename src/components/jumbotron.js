@@ -6,7 +6,7 @@ import Background from '../images/code1.png';
 import Particles from 'react-particles-js';
 import { Transition } from 'react-transition-group';
 
-const Wrapper = styled.div`
+const JumboWrapper = styled.div`
 	position: relative;
 
 	height: 100vh;
@@ -29,17 +29,6 @@ const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-`;
-const BackgroundImage = styled(Particles)`
-	background-position: center;
-	background-size: cover;
-	position: absolute;
-	opacity: .25;
-	top: 0;
-	right: 0;
-
-	bottom: 0;
-	left: 0;
 `;
 
 const Content = styled.div`
@@ -65,6 +54,10 @@ const Inner = styled.div`
 		font-size: 80px;
 		font-family: 'Open Sans', sans-serif;
 		color: #ffffff;
+		text-align: center;
+		@media (max-width: 500px) {
+			font-size: 68px;
+		}
 	}
 	p {
 		font-family: 'Roboto-Mono', monospace;
@@ -80,7 +73,7 @@ const Jumbotron = () => {
 
 	return (
 		<Fragment>
-			<Wrapper>
+			<JumboWrapper>
 				<Particles
 					width={'100vw'}
 					height={'100vh'}
@@ -117,7 +110,7 @@ const Jumbotron = () => {
 						</div>
 					</Inner>
 				</Content>
-			</Wrapper>
+			</JumboWrapper>
 			<div ref={pageRef} />
 		</Fragment>
 	);
