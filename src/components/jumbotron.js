@@ -56,7 +56,7 @@ const Inner = styled.div`
 		color: #ffffff;
 		text-align: center;
 		@media (max-width: 500px) {
-			font-size: 68px;
+			font-size: 65px;
 		}
 	}
 	p {
