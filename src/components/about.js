@@ -1,18 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import Lauren from '../images/lauren.png';
 
 const Wrapper = styled.div`
 	max-width: 760px;
-
+	display: flex;
+	align-items: center;
 	margin: 80px auto;
 	img {
 		height: 200px;
 		width: 200px;
 		margin-right: 20px;
 		border-radius: 100%;
-		float: left;
+	}
+	h1 {
+		color: #373737;
+		font-size: 4rem;
 	}
 `;
 
@@ -24,37 +30,44 @@ const TextContent = styled.div`
 	}
 `;
 
+const Icons = styled.div`
+	display: flex;
+	a {
+		height: 36px;
+		width: 36px;
+		line-height: 36px;
+		background: #8e8e8e;
+		border-radius: 100%;
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+		margin: 0px 5px;
+	}
+`;
+
 const About = () => (
 	<Wrapper id='about'>
 		<img src={Lauren} />
 		<TextContent>
-			<h1>About Lauren</h1>
-			<p>
-				Lauren's coding curiousity was first sparked during her time at the University of
-				Washington. In the last few semesters of her undergraduate studies in Philsophy,
-				Lauren took an intro to computer programming series and realized that it was what
-				she wanted to pursue.
-			</p>
-			<p>
-				After graduating, Lauren worked full time, saving up money and taking a few
-				programming courses online on the side so she could study programming full-time. In
-				June of 2018 she started at Lambda School, settling into the full-stack web
-				development course, unsure of where it would take her.
-			</p>
-			<p>
-				Lambda School ended up being one of the best decisions of her life- quickly picking
-				up the basics of HTML, CSS, and JavaScript, and diving into the complexities of
-				React, Nodejs, Express, SQL, and more. She was hired to be the Section Lead for a
-				new cohort, and is currently holding this position, helping to guide students
-				through the first 3 months of the program, while continuing to expand her knowledge
-				in web development and building projects on the side.
-			</p>
-			<p>
-				Lauren is currently finishing her time at Lambda School, and searching for her place
-				within the professional coding community. With her love of working with data, she is
-				passionate for backend development, but also loves building client side
-				applications.
-			</p>
+			<h1>Hi! I'm Lauren</h1>
+			<p>I like to work on projects and learn new things.</p>
+			<Icons>
+				<a href='https://twitter.com/llwor94' target='_blank'>
+					<FontAwesomeIcon icon={faTwitter} />
+				</a>
+				<a href='https://github.com/llwor94' target='_blank'>
+					<FontAwesomeIcon icon={faGithub} />
+				</a>
+				<a href='https://linkedin.com/in/lauren-worthington' target='_blank'>
+					<FontAwesomeIcon icon={faLinkedinIn} />
+				</a>
+				
+			</Icons>
+			<div className="centerContent">
+<div className="selfCenter standardWidth">
+{/* <TwitterTimelineEmbed sourceType="profile" userId={1934309676} options={{height: 400}} /> */}
+</div>
+</div>
 		</TextContent>
 	</Wrapper>
 );

@@ -24,8 +24,11 @@
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
     "react-helmet": "^5.2.0",
+    "react-image-gallery": "^0.8.12",
     "react-particles-js": "^2.4.2",
+    "react-responsive-carousel": "^3.1.47",
     "react-transition-group": "^2.5.3",
+    "react-twitter-embed": "^2.0.4",
     "styled-components": "^4.1.2"
   },
   "keywords": [

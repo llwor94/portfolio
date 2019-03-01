@@ -9,9 +9,9 @@ import About from '../components/about';
 import Projects from '../components/projects';
 const IndexPage = () => (
 	<Layout>
-		<SEO title='Home' keywords={[ 'gatsby', 'application', 'react' ]} />
+		<SEO title='Home' keywords={[ 'developer', 'web developer', 'react', 'fullstack', 'fullstack developer',  'web']} />
 		<Jumbotron />
-		<About />
+		{/* <About /> */}
 		<Projects />
 	</Layout>
 );

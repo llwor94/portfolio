@@ -22,13 +22,13 @@ const Nav = styled.div`display: flex;`;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #ffffff;
+  color: black;
 	padding-right: 7px;
   font-size: 14px;
 	font-family: 'Roboto-Mono', monospace;
 
 	&:hover {
-		color: #fff;
+		color: black;
 	}
 `;
 
@@ -50,8 +50,8 @@ const Icons = styled.div`
 const Header = () => (
 	<Wrapper>
 		<Nav>
-			<StyledLink to='#about'>About</StyledLink>
-			<StyledLink to='#projects'>Projects</StyledLink>
+			{/* <StyledLink to='#about'>About</StyledLink>
+			<StyledLink to='#projects'>Projects</StyledLink> */}
 		</Nav>
 		<Icons>
 			<a href='https://twitter.com/llwor94' target='_blank'>
