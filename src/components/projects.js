@@ -167,7 +167,7 @@ const Projects = () => (
 							</div>
 						))}
 					</Carousel>
-					<div className='text'>
+					<div className='text' style={{ textAlign: 'center' }}>
 						<h3>{project.title}</h3>
 						<div className='icon-wrap'>{project.icons.map(icon => icon)}</div>
 						<div>
