@@ -70,6 +70,7 @@ const ProjectWrapper = styled.div`
 	}
 	.icon-wrap {
 		display: flex;
+		justify-content: center;
 		svg {
 			width: 15px;
 			height: 15px;
