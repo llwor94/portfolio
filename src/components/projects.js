@@ -8,9 +8,8 @@ import {
 	JsIcon,
 	NodeIcon,
 	PostgresIcon,
-
 	HerokuIcon,
-	SassIcon
+	SassIcon,
 } from './icons';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -26,16 +25,16 @@ import ss3 from '../images/ss3.png';
 import ss4 from '../images/ss4.png';
 import ss5 from '../images/ss5.png';
 import up41 from '../images/up41.png';
-import up42 from '../images/up42.png'
+import up42 from '../images/up42.png';
 
 const Wrapper = styled.div`
-	max-width: 1400px; 
+	max-width: 1400px;
 	display: flex;
 	flex-wrap: wrap;
 
 	justify-content: space-between;
-	margin: 20px auto; 
-	@media(max-width: 1300px) {
+	margin: 20px auto;
+	@media (max-width: 1300px) {
 		justify-content: center;
 	}
 `;
@@ -75,26 +74,24 @@ const ProjectWrapper = styled.div`
 		}
 	}
 
-	@media(max-width: 650px) {
+	@media (max-width: 650px) {
 		flex-direction: column;
 		.carousel {
-		width: 100%;
-		margin-right: 0;
-		
-		.slider {
 			width: 100%;
+			margin-right: 0;
+
+			.slider {
+				width: 100%;
+			}
 		}
+		.text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
-	.text {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-	}
-	.icon-wrap {
-		justify-content: center;
-	}
-	}
+		.icon-wrap {
+			justify-content: center;
+		}
 	}
 `;
 
@@ -111,11 +108,7 @@ const projectList = [
 			<ReactIcon />,
 			<HerokuIcon />,
 		],
-		images: [
-			{ original: up41 },
-			{ original: up42 },
-			
-		],
+		images: [ { original: up41 }, { original: up42 } ],
 	},
 	{
 		title: 'Eastside Swim School',
@@ -151,7 +144,6 @@ const projectList = [
 			{ original: qb5 },
 		],
 	},
-	
 ];
 
 const Projects = () => (
@@ -175,8 +167,10 @@ const Projects = () => (
 					<div className='text'>
 						<h3>{project.title}</h3>
 						<div className='icon-wrap'>{project.icons.map(icon => icon)}</div>
-						<div><a href={project.link}>Live Site</a> &bull;
-						<a href={project.repo}>Project Repository</a></div>
+						<div>
+							<a href={project.link}>Live Site</a> &bull;
+							<a href={project.repo}>Project Repository</a>
+						</div>
 					</div>
 					<hr />
 				</ProjectWrapper>

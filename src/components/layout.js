@@ -11,6 +11,7 @@ const Layout = ({ children }) => (
 		<Helmet>
 			<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' />
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+			<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' />
 		</Helmet>
 
 		<div>
