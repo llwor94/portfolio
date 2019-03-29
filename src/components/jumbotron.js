@@ -6,7 +6,7 @@ import Background from '../images/code1.png';
 import Particles from 'react-particles-js';
 import Working from '../images/work';
 import { Transition } from 'react-transition-group';
-import {DownIcon} from './icons';
+import { DownIcon } from './icons';
 import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const JumboWrapper = styled.div`
@@ -46,11 +46,11 @@ const JumboWrapper = styled.div`
 	.img {
 		display: flex;
 		margin: 0 auto;
-		max-width: 1400px; 
+		max-width: 1400px;
 		align-items: center;
 		justify-content: space-between;
 
-		@media(max-width: 700px) {
+		@media (max-width: 700px) {
 			flex-direction: column;
 		}
 	}
@@ -77,7 +77,10 @@ const JumboWrapper = styled.div`
 	}
 
 	.inner-inner {
-		svg { width: auto; cursor: pointer; }
+		svg {
+			width: auto;
+			cursor: pointer;
+		}
 	}
 `;
 
@@ -171,12 +174,15 @@ const Jumbotron = () => {
 							<p>I'm a fullstack web developer.</p>
 							<div className='inner-inner' style={{ display: 'flex', alignItems: 'center' }}>
 								<p style={{ padding: 0, margin: '0 5px' }}>My Projects</p>
-								<span onClick={() => scroll(pageRef)}>
-								<DownIcon
-								
-									style={{ cursor: 'pointer', width: 'auto' }}
-									
-								/>
+								<span
+									style={{
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+									}}
+									onClick={() => scroll(pageRef)}
+								>
+									<DownIcon style={{ cursor: 'pointer', width: 'auto' }} />
 								</span>
 							</div>
 						</div>
