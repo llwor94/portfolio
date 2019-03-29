@@ -16,6 +16,7 @@ const JumboWrapper = styled.div`
 	background-color: #e0e0e0;
 	background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
 	/* background: #0f2027;  */
+	/* hi */
 	/* fallback for old browsers */
 	/* background: -webkit-linear-gradient(
 		to top,
