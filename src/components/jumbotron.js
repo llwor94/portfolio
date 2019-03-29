@@ -6,6 +6,7 @@ import Background from '../images/code1.png';
 import Particles from 'react-particles-js';
 import Working from '../images/work';
 import { Transition } from 'react-transition-group';
+import {DownIcon} from './icons';
 import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const JumboWrapper = styled.div`
@@ -73,6 +74,10 @@ const JumboWrapper = styled.div`
 		/* color: #ffffff; */
 		color: #373737;
 		margin-bottom: 5px;
+	}
+
+	.inner-inner {
+		svg { width: auto; cursor: pointer; }
 	}
 `;
 
@@ -164,11 +169,11 @@ const Jumbotron = () => {
 					<div className='img'>
 						<div className='text'>
 							<p>I'm a fullstack web developer.</p>
-							<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className='inner-inner' style={{ display: 'flex', alignItems: 'center' }}>
 								<p style={{ padding: 0, margin: '0 5px' }}>My Projects</p>
-								<FontAwesomeIcon
-									icon={faArrowCircleDown}
-									style={{ cursor: 'pointer' }}
+								<DownIcon
+								
+									style={{ cursor: 'pointer', width: 'auto' }}
 									onClick={() => scroll(pageRef)}
 								/>
 							</div>

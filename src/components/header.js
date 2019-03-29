@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
+import {LinkedinIcon, GithubIcon, TwitterIcon} from './icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
@@ -35,14 +36,21 @@ const StyledLink = styled(Link)`
 const Icons = styled.div`
 	display: flex;
 	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		height: 36px;
 		width: 36px;
 		line-height: 36px;
 		background: #fff;
 		border-radius: 100%;
-		color: #535358;
-		font-size: 14px;
-		text-align: center;
+		svg {
+			fill: #535358;
+		height: 20px;
+		width: 20px
+		}
+		
+		
 		margin: 0px 5px;
 	}
 `;
@@ -55,13 +63,13 @@ const Header = () => (
 		</Nav>
 		<Icons>
 			<a href='https://twitter.com/llwor94' target='_blank'>
-				<FontAwesomeIcon icon={faTwitter} />
+				<TwitterIcon />
 			</a>
 			<a href='https://github.com/llwor94' target='_blank'>
-				<FontAwesomeIcon icon={faGithub} />
+				<GithubIcon />
 			</a>
 			<a href='https://linkedin.com/in/lauren-worthington' target='_blank'>
-				<FontAwesomeIcon icon={faLinkedinIn} />
+				<LinkedinIcon />
 			</a>
 		</Icons>
 	</Wrapper>
