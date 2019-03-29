@@ -171,11 +171,13 @@ const Jumbotron = () => {
 							<p>I'm a fullstack web developer.</p>
 							<div className='inner-inner' style={{ display: 'flex', alignItems: 'center' }}>
 								<p style={{ padding: 0, margin: '0 5px' }}>My Projects</p>
+								<span onClick={() => scroll(pageRef)}>
 								<DownIcon
 								
 									style={{ cursor: 'pointer', width: 'auto' }}
-									onClick={() => scroll(pageRef)}
+									
 								/>
+								</span>
 							</div>
 						</div>
 						<Working />
