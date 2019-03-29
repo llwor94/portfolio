@@ -24,8 +24,11 @@ import ss2 from '../images/ss2.png';
 import ss3 from '../images/ss3.png';
 import ss4 from '../images/ss4.png';
 import ss5 from '../images/ss5.png';
+import up4 from '../images/up4.png';
 import up41 from '../images/up41.png';
 import up42 from '../images/up42.png';
+import up43 from '../images/up43.png';
+
 
 const Wrapper = styled.div`
 	max-width: 1400px;
@@ -97,7 +100,7 @@ const ProjectWrapper = styled.div`
 
 const projectList = [
 	{
-		title: 'Up4 (WIP)',
+		title: 'Up4',
 		link: 'https://up4.life/',
 		repo: 'https://github.com/Lambda-School-Labs/labs10-date-planning',
 		icons: [
@@ -108,7 +111,7 @@ const projectList = [
 			<ReactIcon />,
 			<HerokuIcon />,
 		],
-		images: [ { original: up41 }, { original: up42 } ],
+		images: [ { original: up4 }, { original: up41 }, { original: up42 }, { original: up43 } ],
 	},
 	{
 		title: 'Eastside Swim School',
