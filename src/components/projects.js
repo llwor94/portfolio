@@ -29,7 +29,6 @@ import up41 from '../images/up41.png';
 import up42 from '../images/up42.png';
 import up43 from '../images/up43.png';
 
-
 const Wrapper = styled.div`
 	max-width: 1400px;
 	display: flex;
@@ -47,6 +46,7 @@ const ProjectWrapper = styled.div`
 	margin: 40px 10px;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 
 	font-family: 'Open Sans', sans-serif;
 	a {
@@ -70,6 +70,7 @@ const ProjectWrapper = styled.div`
 	}
 	.icon-wrap {
 		display: flex;
+		justify-content: center;
 		svg {
 			width: 15px;
 			height: 15px;
@@ -167,7 +168,7 @@ const Projects = () => (
 							</div>
 						))}
 					</Carousel>
-					<div className='text'>
+					<div className='text' style={{ textAlign: 'center' }}>
 						<h3>{project.title}</h3>
 						<div className='icon-wrap'>{project.icons.map(icon => icon)}</div>
 						<div>
