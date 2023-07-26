@@ -12,7 +12,6 @@ const IndexPage = () => (
 		<SEO title='Home' keywords={[ 'developer', 'web developer', 'react', 'fullstack', 'fullstack developer',  'web']} />
 		<Jumbotron />
 		{/* <About /> */}
-		<Projects />
 	</Layout>
 );
 
